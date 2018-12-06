@@ -23,6 +23,8 @@ Installation
 4. Set your environment variables. See the section below.
 5. Start the bot! Use [PM2](https://github.com/Unitech/pm2) or [forever](https://github.com/foreverjs/forever) or something that will daemonize the bot.
 
+https://gist.github.com/alexandrusavin/2d2a91fcc35faf1c9f828b350e13c3bd
+
 
 Warning: All messages under 140 characters will get posted to Twitter. Only use a channel designated to post tweets from.
 
