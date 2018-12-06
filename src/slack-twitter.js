@@ -73,8 +73,8 @@ rtm.on('message', function(message) {
   web.conversations.list({types: 'private_channel'}).then(results => {
     the_channel = results.channels.find(conversation => (conversation.name && conversation.name == slackOptions.post_channel));
     if (the_channel) {
-      console.log ("New post on Channel")
-      if (message.channel == the_channel.id && (message.subtype != 'message_changed' && message.subtype != 'bot_message' && message.subtype != 'channel_join')) {
+      console.log ("New post on Channel ("+message.subtype+")")
+      if (message.channel == the_channel.id && (message.subtype != 'message_changed' && message.subtype != 'bot_message' && message.subtype != 'channel_join' && message.subtype != 'group_topic')) {
         if (message.files != undefined && message.files.length!=0) {
           console.log ("Let's post that on twitter")
           // There is an attachment
