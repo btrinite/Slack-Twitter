@@ -1,3 +1,15 @@
+Preamble
+====
+Compare to orignal work, this version does :
+- Support simple Slack to Tweet through a dedicated channel
+- Support following media :
+  - Support text (up to the maximum size allowed by twitter)
+  - Support Picture (but dot not check if picture meet Twitter constraints)
+  - Support Video (transcoding is done with ffpmeg to meet twitter constraints)
+  - Support a single media (attachment) per Slack message
+- For post including audio or video, Detect if message if part of chat or media caption
+- Give a feedback through Slack when tweet is posted successfully 
+
 Installation
 ====
 
